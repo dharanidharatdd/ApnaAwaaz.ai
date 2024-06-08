@@ -1,2 +1,2 @@
-# HackPrix_GenAI
+# ApnaAwaaz.Ai
 Project for HackPrix hackathon.
