@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 # HackPrix_GenAI
 
+=======
+# ApnaAwaaz.Ai
+>>>>>>> 4f96043402e794b25c77e91f6f8fd382d94e318c
 Project for HackPrix hackathon.
 
 ## Requirements
