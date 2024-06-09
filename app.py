@@ -21,6 +21,19 @@ def download_video(video_url, output_path='downloaded_video.mp4'):
         st.error(f"Exception occurred: {e}")
         return None
 
+def extract_audio(video_path, audio_path='extracted_audio.mp3', duration=60):
+    try:
+        (
+            ffmpeg
+            .input(video_path)
+            .output(audio_path, t=duration, format='mp3')
+            .run()
+        )
+        return audio_path
+    except ffmpeg.Error as e:
+        st.error(f"Error extracting audio: {e}")
+        return None
+
 def extract_thumbnail(video_path, thumbnail_path='thumbnail.jpg', timestamp='00:00:01'):
     try:
         (
@@ -51,11 +64,13 @@ if video_url:
         if thumbnail_path:
             st.image(thumbnail_path, caption='Thumbnail')
         
-        # Store video in a variable (for demonstration)
-        with open(video_path, 'rb') as f:
-            video_data = f.read()
-        st.write("Video downloaded and stored in a variable.")
-        st.audio(video_data)        
+        # Extract audio for 1 minute
+        audio_path = extract_audio(video_path, duration=60)
+        if audio_path:
+            st.write("Audio extracted:")
+            st.audio(audio_path, format='audio/mp3')
+            os.remove(audio_path)  # Cleanup
+        
         # Cleanup
         os.remove(video_path)
         os.remove(thumbnail_path)
