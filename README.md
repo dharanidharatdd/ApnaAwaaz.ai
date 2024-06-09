@@ -51,3 +51,5 @@ streamlit run stream-ui.py
 - Commit your changes (git commit -m 'Add some feature')
 - Push to the branch (git push origin feature/your-feature-name)
 - Open a pull request
+
+![alt text](assets/image.png)
