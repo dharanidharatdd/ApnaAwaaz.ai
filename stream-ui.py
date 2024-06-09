@@ -68,7 +68,7 @@ if uploaded_audio_file is not None:
 
     # Perform voice conversion
     def perform_voice_conversion(audio_file_path, model_path, output_path):
-        command = f"python -m rvc_python -i {audio_file_path} -mp {model_path} -o {output_path}"
+        command = f"python -m rvc_python -i {audio_file_path} -mp {model_path} -o {output_path} --device cuda:0"
         st.write("Running voice conversion...")
         try:
             result = subprocess.run(command, shell=True, capture_output=True, text=True)
