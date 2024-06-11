@@ -1,6 +1,6 @@
 # ApnaAwaaz.Ai
 
-Project for HackPrix hackathon.
+Project for HackPrix hackathon (Sponsored by GitHub, HackQuest, ETHIndia, Polygon, Bobble, Catalog, Tezos).
 
 ## Requirements
 
