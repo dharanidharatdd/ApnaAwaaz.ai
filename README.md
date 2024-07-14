@@ -1,6 +1,6 @@
 # ApnaAwaaz.Ai
 
-Project for HackPrix hackathon.
+Project for HackPrix hackathon (Sponsored by GitHub, HackQuest, ETHIndia, Polygon, Bobble, Catalog, Tezos).
 
 ## Requirements
 
@@ -45,7 +45,7 @@ streamlit run stream-ui.py
 
 ## Contributing
 
-- We welcome contributions to improve ChatFunAI. To contribute, please fork the repository, create a new branch, and submit a pull request with your changes. Ensure that your code adheres to the project's coding standards and includes appropriate tests.
+- We welcome contributions to improve ApnaAwaaz.ai. To contribute, please fork the repository, create a new branch, and submit a pull request with your changes. Ensure that your code adheres to the project's coding standards and includes appropriate tests.
 
 - Fork the repository
 - Create a new branch (git checkout -b feature/your-feature-name)
