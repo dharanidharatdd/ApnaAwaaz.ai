@@ -19,7 +19,7 @@ pip install torch==2.1.1+cu118 torchaudio==2.1.1+cu118 --index-url https://downl
 streamlit run stream-ui.py
 ```
 
-- Install RVC-beta from [https://huggingface.co/lj1995/VoiceConversionWebUI/tree/main here]
+- Install RVC-beta from [here](https://huggingface.co/lj1995/VoiceConversionWebUI/tree/main)
 
 # Features
 
