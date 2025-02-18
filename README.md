@@ -13,7 +13,7 @@ pip install rvc-python
 pip install torch==2.1.1+cu118 torchaudio==2.1.1+cu118 --index-url https://download.pytorch.org/whl/cu118
 ```
 
-- To run the app, just type:
+- To run the app, you have to just type:
 
 ```sh
 streamlit run stream-ui.py
